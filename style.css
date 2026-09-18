@@ -1,0 +1,103 @@
+@define-color bg #32302f;
+@define-color fg #ebdbb2;
+@define-color blk #282828;
+@define-color red #cc241d;
+@define-color grn #98971a;
+@define-color ylw #d79921;
+@define-color blu #458588;
+@define-color mag #b16286;
+@define-color cyn #689d6a;
+@define-color brblk #928374;
+@define-color white #ebdbb2;
+
+* {
+    font-family: "Iosevka Nerd Font", monospace;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+window#waybar {
+    background-color: @bg;
+    color: @fg;
+    min-height: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    color: @white;
+    background: transparent;
+    border-bottom: 3px solid @blk;
+}
+
+#workspaces button.visible {
+    color: @white;
+    border-bottom: 3px solid @white;
+}
+
+#workspaces button.empty {
+    color: @brblk;
+}
+
+#workspaces button.empty.active {
+    color: @cyn;
+    border-bottom: 3px solid @mag;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+    color: @white;
+}
+
+#battery,
+#custom-sep,
+#cpu,
+#memory,
+#network,
+#wireplumber,
+#power-profiles-daemon {
+    padding: 4px 4px;
+    /*margin: 2px 0;*/
+    /*border-left: 1px solid @brblk;*/
+}
+
+#custom-sep {
+    color: @brblk;
+}
+
+#clock {
+    color: @cyn;
+    border-bottom: 3px solid @cyn;
+}
+
+#battery,
+#power-profiles-daemon {
+    color: @mag;
+    border-bottom: 3px solid @mag;
+}
+
+#memory {
+    color: @grn;
+    border-bottom: 3px solid @grn;
+}
+
+#cpu {
+    color: @blu;
+    border-bottom: 3px solid @blu;
+}
+
+#network {
+    color: @red;
+    border-bottom: 3px solid @red;
+}
+
+#wireplumber {
+    color: @white;
+    border-bottom: 3px solid @white;
+}
+
+#network.disconnected {
+    background-color: @red;
+    color: @white;
+}

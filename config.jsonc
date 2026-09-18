@@ -1,0 +1,109 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 21,
+    "spacing": 4,
+    "modules-left": [
+        "sway/workspaces",
+        "custom/sep"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "memory",
+        "custom/sep",
+        "group/dropdown"
+    ],
+    "group/dropdown": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 300,
+            "click-to-reveal": true,
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "battery", // Anchor module
+            "cpu",
+            "custom/sep",
+            "network",
+            "custom/sep",
+            "wireplumber",
+            "custom/sep",
+            "power-profiles-daemon",
+            "custom/sep"
+        ]
+    },
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{name}",
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": []
+        }
+    },
+    "clock": {
+        "format": "{:%H:%M}",
+        "format-alt": " {:%d-%m}",
+        "tooltip": false
+    },
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": false,
+        "on-click": "foot btop"
+    },
+    "memory": {
+        "format": "  {used:0.1f}G/{total:0.1f}G",
+        "on-click": "foot btop"
+    },
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    "network": {
+        "format-wifi": "  {signalStrength}%",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "󰖪",
+        "tooltip-format": "{essid} ({signalStrength}%)",
+        "on-click": "foot wlctl"
+    },
+    "wireplumber": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰖁 Muted",
+        "format-icons": [
+            "",
+            "",
+            ""
+        ],
+        "on-click": "foot wiremix -v output",
+        "scroll-step": 5,
+        "tooltip": false
+    },
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": " ",
+            "performance": " ",
+            "balanced": " ",
+            "power-saver": " "
+        }
+    },
+    "custom/sep": {
+        "format": "|",
+        "interval": 0
+    }
+}
