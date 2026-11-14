@@ -1,0 +1,80 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "apple_small",
+        "padding": {
+            "top": 2,
+            "right": 6,
+            "left": 2
+        }
+    },
+    "display": {
+        "separator": "  ",
+        "color": "white"
+    },
+    "modules": [
+        // --- SYSTEM SECTION ---
+        {
+            "type": "custom",
+            "format": " \u001b[42;30m  SYSTEM \u001b[0m"
+        },
+        {
+            "type": "os",
+            "key": " 󰣇 OS"
+        },
+        {
+            "type": "kernel",
+            "key": " 󰒋 KE"
+        },
+        {
+            "type": "packages",
+            "key": " 󰏖 PK"
+        },
+        "break",
+        // --- SOFTWARE SECTION ---
+        {
+            "type": "custom",
+            "format": " \u001b[43;30m 󰀻 SOFTWARE \u001b[0m"
+        },
+        {
+            "type": "wm",
+            "key": " 󱂬 WM"
+        },
+        {
+            "type": "shell",
+            "key": " 󰞷 SH"
+        },
+        {
+            "type": "terminal",
+            "key": " 󰆍 TR"
+        },
+        "break",
+        // --- HARDWARE SECTION ---
+        {
+            "type": "custom",
+            "format": " \u001b[44;30m 󰓅 HARDWARE \u001b[0m"
+        },
+        {
+            "type": "cpu",
+            "key": " 󰻠 CP",
+            "format": "{name}"
+        },
+        {
+            "type": "gpu",
+            "key": " 󰢮 GP",
+            "hideType": "integrated",
+            "format": "AMD Radeon Pro 5300M"
+        },
+        {
+            "type": "memory",
+            "key": " 󰍛 RA",
+            "format": "{used} / {total}"
+        },
+        "break",
+        // --- COLORS ---
+        {
+            "type": "colors",
+            "symbol": "square"
+        }
+    ]
+}

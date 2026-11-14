@@ -1,0 +1,76 @@
+#TabsToolbar,
+#sidebar-header,
+#sidebar-panel-header,
+.sidebar-panel-header,
+#sidebar-box > sidebarheader {
+    display: none !important;
+}
+
+* {
+    border-radius: 0px !important;
+}
+
+:root,
+#main-window,
+#navigator-toolbox {
+    --gb-bg0: #32302f;
+    --gb-bg1: #3c3836;
+    --gb-fg0: #ebdbb2;
+    --gb-fg-bright: #fbf1c7;
+    --gb-accent: #458588;
+
+    --toolbar-bgcolor: #3c3836 !important;
+    --toolbar-color: #ebdbb2 !important;
+    --lwt-accent-color: #32302f !important;
+    --lwt-text-color: #ebdbb2 !important;
+    --toolbar-field-background-color: #32302f !important;
+    --toolbar-field-color: #ebdbb2 !important;
+    --toolbar-field-border-color: #3c3836 !important;
+    --toolbar-field-focus-background-color: #32302f !important;
+    --toolbar-field-focus-color: #fbf1c7 !important;
+    --toolbar-field-focus-border-color: #458588 !important;
+    --arrowpanel-background: #32302f !important;
+    --arrowpanel-color: #ebdbb2 !important;
+    --arrowpanel-border-color: #3c3836 !important;
+    --sidebar-background-color: #32302f !important;
+    --sidebar-text-color: #ebdbb2 !important;
+    --sidebar-border-color: #3c3836 !important;
+}
+
+#navigator-toolbox,
+#nav-bar,
+#PersonalToolbar {
+    background-color: #3c3836 !important;
+    color: #ebdbb2 !important;
+    font-family: "Iosevka NF", monospace !important;
+    border-bottom: 1px solid #32302f !important;
+}
+
+#urlbar-background,
+#searchbar {
+    background-color: #32302f !important;
+    border: 1px solid #504945 !important;
+}
+
+#urlbar-input,
+.urlbarView {
+    color: #ebdbb2 !important;
+    background-color: #32302f !important;
+}
+
+#sidebar-box,
+.sidebar-placesTree {
+    background-color: #32302f !important;
+    color: #ebdbb2 !important;
+}
+
+#sidebar-splitter {
+    border-color: #3c3836 !important;
+    background-color: #3c3836 !important;
+}
+
+toolbarbutton,
+.toolbarbutton-icon {
+    fill: #ebdbb2 !important;
+    color: #ebdbb2 !important;
+}

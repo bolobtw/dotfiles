@@ -1,0 +1,44 @@
+@-moz-document regexp("^moz-extension://.*/(sidebar/sidebar|sidebery/sidebar|page\.group/group)\.html.*") {
+    #root.root,
+    :root {
+        --s-frame-bg: #32302f !important;
+        --s-frame-fg: #ebdbb2 !important;
+        --s-toolbar-bg: #3c3836 !important;
+        --s-toolbar-fg: #ebdbb2 !important;
+        --s-act-el-bg: #3c3836 !important;
+        --s-act-el-fg: #fbf1c7 !important;
+        --s-popup-bg: #32302f !important;
+        --s-popup-fg: #ebdbb2 !important;
+        --s-accent: #458588 !important;
+
+        --frame-bg: #32302f !important;
+        --frame-fg: #ebdbb2 !important;
+        --frame-el-overlay-hover-bg: #3c3836 !important;
+        --frame-el-overlay-selected-bg: #3c3836 !important;
+        --frame-el-overlay-selected-border: #458588 !important;
+        --toolbar-bg: #3c3836 !important;
+        --toolbar-fg: #ebdbb2 !important;
+        --toolbar-el-overlay-hover-bg: #504945 !important;
+        --toolbar-el-overlay-active-bg: #504945 !important;
+        --toolbar-el-overlay-selected-bg: #504945 !important;
+
+        --tabs-font: 10pt "Iosevka NF", monospace !important;
+        --tabs-normal-bg: transparent !important;
+        --tabs-normal-fg: #a89984 !important;
+        --tabs-activated-bg: #3c3836 !important;
+        --tabs-activated-fg: #fbf1c7 !important;
+        --tabs-selected-bg: #3c3836 !important;
+        --tabs-selected-fg: #fbf1c7 !important;
+        --tabs-border-radius: 0px !important;
+    }
+
+    body, #root, .Sidebar, .NavigationBar {
+        background-color: #32302f !important;
+        color: #ebdbb2 !important;
+        font-family: "Iosevka NF", monospace !important;
+    }
+
+    .Tab[data-active="true"] .body {
+        background-color: #3c3836 !important;
+    }
+}
