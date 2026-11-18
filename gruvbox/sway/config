@@ -11,6 +11,9 @@ set $right l
 set $term foot
 # Your preferred application launcher
 set $menu fuzzel
+# 2nd Monitor
+# set $display2 DP-6
+set $display2 DP-8
 
 ### To Remove Titlebar
 default_border none
@@ -19,14 +22,14 @@ default_border none
 output * bg ~/Documents/dotfiles/gruvbox/walls/1.png fill
 
 output eDP-1 res 3072x1920 pos 0 1440
-output DP-6 res 2560x1440 pos 0 0
+output $display2 res 2560x1440 pos 0 0
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
 workspace 1 output eDP-1
 workspace 2 output eDP-1
 workspace 3 output eDP-1
-workspace 4 output DP-6
-workspace 5 output DP-6
+workspace 4 output $display2
+workspace 5 output $display2
 
 ### Input setup
 input type:touchpad {
@@ -60,6 +63,7 @@ bindsym $mod+Return exec $menu
 
 # Special key to take a screenshot with grim
 bindsym Print exec grim -g "$(slurp)" - | wl-copy -t image/png
+bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy -t image/png
 
 floating_modifier $mod normal
 
