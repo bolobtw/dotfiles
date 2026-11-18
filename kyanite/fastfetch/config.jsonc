@@ -63,7 +63,7 @@
             "type": "gpu",
             "key": " 󰢮 GP",
             "hideType": "integrated",
-            "format": "AMD Radeon Pro 5300M"
+            "format": "AMD Radeon Pro 5500M"
         },
         {
             "type": "memory",
